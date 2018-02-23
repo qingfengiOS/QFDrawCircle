@@ -15,6 +15,7 @@
 		85602D8B2040039600DE0628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85602D8A2040039600DE0628 /* main.m */; };
 		85602D952040039700DE0628 /* QFDrawCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85602D942040039700DE0628 /* QFDrawCircleTests.m */; };
 		85602DA02040039700DE0628 /* QFDrawCircleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85602D9F2040039700DE0628 /* QFDrawCircleUITests.m */; };
+		85602DB5204004D900DE0628 /* QFCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85602DB4204004D900DE0628 /* QFCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		85602D9B2040039700DE0628 /* QFDrawCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFDrawCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85602D9F2040039700DE0628 /* QFDrawCircleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFDrawCircleUITests.m; sourceTree = "<group>"; };
 		85602DA12040039700DE0628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85602DB3204004D900DE0628 /* QFCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCircleView.h; sourceTree = "<group>"; };
+		85602DB4204004D900DE0628 /* QFCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		85602D7A2040039600DE0628 /* QFDrawCircle */ = {
 			isa = PBXGroup;
 			children = (
+				85602DB2204004D900DE0628 /* QFCircleView */,
 				85602D7B2040039600DE0628 /* AppDelegate.h */,
 				85602D7C2040039600DE0628 /* AppDelegate.m */,
 				85602D7E2040039600DE0628 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				85602DA12040039700DE0628 /* Info.plist */,
 			);
 			path = QFDrawCircleUITests;
+			sourceTree = "<group>";
+		};
+		85602DB2204004D900DE0628 /* QFCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				85602DB3204004D900DE0628 /* QFCircleView.h */,
+				85602DB4204004D900DE0628 /* QFCircleView.m */,
+			);
+			path = QFCircleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85602D802040039600DE0628 /* ViewController.m in Sources */,
+				85602DB5204004D900DE0628 /* QFCircleView.m in Sources */,
 				85602D8B2040039600DE0628 /* main.m in Sources */,
 				85602D7D2040039600DE0628 /* AppDelegate.m in Sources */,
 			);

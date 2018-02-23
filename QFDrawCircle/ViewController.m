@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QFCircleView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    QFCircleView *circleView = [[QFCircleView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:circleView];
+    
+    //设置开始点的位置
+    circleView.pointArray = @[@0,@(M_PI / 2),@(M_PI),@(M_PI*3/2)];
+    
+    //设置开始点和结束点的颜色
+    circleView.colorArray = @[[UIColor redColor],[UIColor yellowColor],[UIColor greenColor],[UIColor blueColor]];
+    //设置类型
+    circleView.style = CircleStyleFill;
+    //设置线宽
+    circleView.lineWidth = 1;
 }
 
 
